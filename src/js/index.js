@@ -1,3 +1,4 @@
 import x from "./test";
 
-console.log("Final Value", x + 20);
+const a = 23;
+console.log("Final Value", x + 20, a);
