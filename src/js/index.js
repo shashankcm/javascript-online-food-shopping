@@ -1,4 +1,13 @@
-import x from "./test";
+import Search from "./models/Search";
 
-const a = 23;
-console.log("Final Value", x + 20, a);
+/** Global state of the app
+ * - Search Object
+ * - Current recipe object
+ * - Shopping list object
+ * - Liked recipes
+ */
+const state = {};
+
+const search = new Search("pizza");
+console.log(search);
+search.getLocalDataAPI();
