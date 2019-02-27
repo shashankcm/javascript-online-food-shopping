@@ -7,8 +7,8 @@ export default class Search {
   constructor(query) {
     this.query = query;
   }
-  /* async getAPIData() {
-     try {
+  async getAPIData() {
+    try {
       //--------> option: 1 Enabling CORS
       //const response = await axios.get(`${url}?key=${API_Key}`, {
       //crossdomain: true
@@ -25,13 +25,13 @@ export default class Search {
           crossdomain: true
         }
       );
-      console.log(response);
+      //console.log(response);
       this.result = response.data.recipes;
-      console.log(this.result);
+      //console.log(this.result);
     } catch (error) {
       console.log(error);
     }
-  } */
+  }
 
   async getLocalDataAPI() {
     const response = file;
